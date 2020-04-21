@@ -1,0 +1,72 @@
+Number of Atoms,Type,Charge,Name,Ion
+Monatomic,Cation,1,Cesium,Cs+
+Monatomic,Cation,1,Hydrogen,H+
+Monatomic,Cation,1,Lithium,Li+
+Monatomic,Cation,1,Potassium,K+
+Monatomic,Cation,1,Sodium,Na+
+Monatomic,Cation,1,Silver,Ag+
+Monatomic,Cation,2,Barium,Ba2+
+Monatomic,Cation,2,Beryllium,Be2+
+Monatomic,Cation,2,Cadmium,Cd2+
+Monatomic,Cation,2,Calcium,Ca2+
+Monatomic,Cation,2,Magnesium,Mg2+
+Monatomic,Cation,2,Manganese,Mn2+
+Monatomic,Cation,2,Nickel,Ni2+
+Monatomic,Cation,2,Strontium,Sr2+
+Monatomic,Cation,2,Zinc,Zn2+
+Monatomic,Cation,3,Aluminum,Al3+
+Monatomic,Anion,-1,Bromide,Br-
+Monatomic,Anion,-1,Chloride,Cl-
+Monatomic,Anion,-1,Fluoride,F-
+Monatomic,Anion,-1,Hydride,H-
+Monatomic,Anion,-1,Iodide,I-
+Monatomic,Anion,-2,Oxide,O2-
+Monatomic,Anion,-2,Sulfide,S2-
+Monatomic,Anion,-3,Nitride,N3-
+Monatomic,Anion,-3,Phosphide,P3-
+Monatomic,Cation Type II,2,Chromium(II),Cr2+
+Monatomic,Cation Type II,3,Chromium(III),Cr3+
+Monatomic,Cation Type II,4,Chromium(IV),Cr4+
+Monatomic,Cation Type II,2,Cobalt(II),Co2+
+Monatomic,Cation Type II,3,Cobalt(III),Co3+
+Monatomic,Cation Type II,1,Copper(I),Cu+
+Monatomic,Cation Type II,2,Copper(II),Cu2+
+Monatomic,Cation Type II,2,Iron(II),Fe2+
+Monatomic,Cation Type II,3,Iron(III),Fe3+
+Monatomic,Cation Type II,2,Lead(II),Pb2+
+Monatomic,Cation Type II,4,Lead(IV),Pb4+
+Polyatomic,Cation Type II,1,Mercury(I),Hg22+
+Monatomic,Cation Type II,2,Mercury(II),Hg2+
+Monatomic,Cation Type II,2,Tin(II),Sn2+
+Monatomic,Cation Type II,4,Tin(IV),Sn4+
+Polyatomic,Cation,1,Ammonium,NH4 +
+Polyatomic,Anion,-1,Acetate,C2H3O2 -
+Polyatomic,Anion,-1,Bromate,BrO3 -
+Polyatomic,Anion,-2,Carbonate,CO3 2-
+Polyatomic,Anion,-1,Hydrogen Carbonate (Bicarbonate),HCO3 -
+Polyatomic,Anion,-1,Hypochlorite,ClO-
+Polyatomic,Anion,-1,Chlorite,ClO2 -
+Polyatomic,Anion,-1,Chlorate,ClO3 -
+Polyatomic,Anion,-1,Perchlorate,ClO4 -
+Polyatomic,Anion,-1,Dichromate,Cr2O7 2-
+Polyatomic,Anion,-2,Chromate,CrO4 2-
+Polyatomic,Anion,-1,Thiocyanate,SCN -
+Polyatomic,Anion,-1,Cynanide,CN -
+Polyatomic,Anion,-1,Hydroxide,OH -
+Polyatomic,Anion,-1,Iodate,IO3-
+Polyatomic,Anion,-1,Nitrite,NO2 -
+Polyatomic,Anion,-1,Nitrate,NO3 -
+Polyatomic,Anion,-2,Oxalate,C2O4 2-
+Polyatomic,Anion,-1,Permanganate,MnO4 -
+Polyatomic,Anion,-2,Peroxide,O2 2-
+Polyatomic,Anion,-3,Phosphate,PO4 3-
+Polyatomic,Anion,-2,Hydrogen Phosphate,HPO4 2-
+Polyatomic,Anion,-1,Dihydrogen Phosphate,H2PO4 -
+Polyatomic,Anion,-2,Silicate,SiO4 2-
+Polyatomic,Anion,-2,Sulfite,SO3 2-
+Polyatomic,Anion,-2,Sulfate,SO4 2-
+Polyatomic,Anion,-1,Hydrogen Sulfate (Bisulfate),HSO4 -
+Polyatomic,Anion,-1,Hydrogen Sulfide,HS -
+Polyatomic,Anion,-2,Thiosulfate,S2O3 2-
+Polyatomic,Anion,-2,Tartate,C4H4O6 2-
+Polyatomic,Anion,-2,Tetraborate,B4O7 2-
