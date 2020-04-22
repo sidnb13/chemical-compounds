@@ -49,7 +49,7 @@ public class CompoundMaker {
                 String[] e = pfix.nextLine().split(",");
                 prefixes.put(e[0], Integer.parseInt(e[1]));
             }
-            System.out.print("Enter either a covalent compound or its name: ");
+            System.out.print("\nEnter either a covalent compound or its name: ");
             String input = s.nextLine();
             if (input.replaceAll("\\d", "").length() == input.length()) {
                 String[] arr = input.split("\\s");
@@ -70,7 +70,7 @@ public class CompoundMaker {
                 }
                 res = new StringBuilder(res.toString().replaceAll("1", "").replaceAll("oo", "o").trim());
                 res = new StringBuilder(res.substring(0, 1).toUpperCase() + res.substring(1));
-                System.out.println(res);
+                System.out.println("\n" + res);
             }
         } else {
             in = new Scanner(new File("ions.csv"));
@@ -120,7 +120,6 @@ public class CompoundMaker {
                         cation.isPolyatomic() && a != 1 ? "(" + cation.getIonSpecial() + ")" : cation.getIonSpecial(), a,
                         anion.isPolyatomic() && c != 1 ? "(" + anion.getIonSpecial() + ")" : anion.getIonSpecial(), c)
                         .replaceAll("1", "");
-                f = changeToSubscript(f);
                 System.out.println("\n" + changeToSubscript(f));
             }
         }
@@ -150,7 +149,7 @@ public class CompoundMaker {
                     element = e.getValue();
             }
         }
-        return (element + freq).replaceAll("1", "");
+        return freq == 1 ? element : element + freq;
     }
 
     public static String getNameFromFormula(String element, int count, boolean isLast) {
@@ -215,7 +214,7 @@ public class CompoundMaker {
         StringBuilder res = new StringBuilder();
         String[] f = formula.split("");
         for (String c : f)
-            res.append(c.matches("[0-9]") ? (char) ('\u2080' + Integer.parseInt(c)) : c);
+            res.append(c.matches("\\d+") ? (char) ('\u2080' + Integer.parseInt(c)) : c);
         return res.toString();
     }
 }
