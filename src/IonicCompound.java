@@ -1,8 +1,8 @@
 public class IonicCompound {
-    private final String name;
+    private final String ion;
     private final int charge;
     private final boolean polyatomic;
-    private String ion;
+    private String name;
 
     public IonicCompound(String n, int c, boolean isP, String io) {
         name = n;
@@ -19,32 +19,29 @@ public class IonicCompound {
         return charge;
     }
 
-    public String getIon() { return ion; }
+    public void setName(String n) {
+        name = n;
+    }
 
+    /**
+     * @return a trimmed down version of ionic formula without charge suffix
+     */
     public String getIonSpecial() {
-        int i = ion.length()-1;
-        if (Character.isDigit(ion.charAt(ion.length()-2))) {
+        int i = ion.length() - 1;
+        if (Character.isDigit(ion.charAt(ion.length() - 2))) {
             for (i = ion.length() - 1; i >= 0; i--) {
                 if (String.valueOf(ion.charAt(i)).matches("\\d"))
                     break;
             }
         }
-        return ion.substring(0,i).trim();
-    }
-
-    public void setIon(String s) {
-        ion = s;
+        return ion.substring(0, i).trim();
     }
 
     public boolean isPolyatomic() {
         return polyatomic;
     }
 
-    public boolean isAnion() {
-        return charge < 0;
-    }
-
     public String toString() {
-        return name+" "+getIonSpecial()+" "+charge;
+        return String.format("%s %s %d", name, getIonSpecial(), charge);
     }
 }
