@@ -110,7 +110,9 @@ public class CompoundMaker {
 
             int a = Math.abs(anion.getCharge()), c = cation.getCharge();
             if (Math.abs(a) == c) {
-                System.out.println("\n" + cation.getName() + " " + anion.getName().toLowerCase() + ": " + cation.getIonSpecial() + anion.getIonSpecial());
+                System.out.println("\n" + changeToSubscript(cation.getName() + " " +
+                        anion.getName().toLowerCase() + ": " +
+                        cation.getIonSpecial() + anion.getIonSpecial()));
             } else {
                 if (c > a) c = findLCM(a, c);
                 else a = findLCM(a, c);
@@ -118,6 +120,7 @@ public class CompoundMaker {
                         cation.isPolyatomic() && a != 1 ? "(" + cation.getIonSpecial() + ")" : cation.getIonSpecial(), a,
                         anion.isPolyatomic() && c != 1 ? "(" + anion.getIonSpecial() + ")" : anion.getIonSpecial(), c)
                         .replaceAll("1", "");
+                f = changeToSubscript(f);
                 System.out.println("\n" + changeToSubscript(f));
             }
         }
@@ -211,8 +214,8 @@ public class CompoundMaker {
     public static String changeToSubscript(String formula) {
         StringBuilder res = new StringBuilder();
         String[] f = formula.split("");
-        for (String s : f)
-            res.append(s.matches("\\d") ? (char) ('\u2080' + Integer.parseInt(s)) : s);
+        for (String c : f)
+            res.append(c.matches("[0-9]") ? (char) ('\u2080' + Integer.parseInt(c)) : c);
         return res.toString();
     }
 }
