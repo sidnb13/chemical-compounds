@@ -37,16 +37,16 @@ public class CompoundMaker {
                 String[] arr = in.nextLine().split(",");
                 elements.put(arr[1].toLowerCase(), arr[2]);
             }
-            Scanner pfix = new Scanner(new File("prefixes.csv"));
-            Scanner sfix = new Scanner(new File("suffixes.csv"));
+            Scanner pix = new Scanner(new File("prefixes.csv"));
+            Scanner six = new Scanner(new File("suffixes.csv"));
             suffixes = new LinkedHashMap<>();
-            while (sfix.hasNextLine()) {
-                String[] e = sfix.nextLine().split(",");
+            while (six.hasNextLine()) {
+                String[] e = six.nextLine().split(",");
                 suffixes.put(e[0], e[1]);
             }
             prefixes = new LinkedHashMap<>();
-            while (pfix.hasNextLine()) {
-                String[] e = pfix.nextLine().split(",");
+            while (pix.hasNextLine()) {
+                String[] e = pix.nextLine().split(",");
                 prefixes.put(e[0], Integer.parseInt(e[1]));
             }
             System.out.print("\nEnter either a covalent compound or its name: ");
