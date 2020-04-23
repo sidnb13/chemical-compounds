@@ -23,7 +23,6 @@ public class CompoundMaker {
 
     /**
      * Performs task of generating the compound
-     *
      * @throws Exception for custom errors
      */
     public static void main(String[] args) throws Exception {
@@ -89,7 +88,7 @@ public class CompoundMaker {
                         (findFromIons(compoundList, arr[0]).getCharge() < 0 ? "cation" : "anion") + "): ");
                 arr[1] = s.nextLine();
             } catch (NullPointerException n) {
-                System.err.println("Please enter a valid polyatomic ion.");
+                System.err.println("Please enter a valid polyatomic or regular ion.");
             }
             for (String e : arr) {
                 if (!(e.matches(ELEMENT_REGEX) || findFromIons(compoundList, e).isPolyatomic()))
@@ -101,13 +100,11 @@ public class CompoundMaker {
                 throw new Exception("The input must contain 1 anion and cation (any input order).");
             IonicCompound anion = pairList.get(0).getCharge() < 0 ? pairList.get(0) : pairList.get(1);
             IonicCompound cation = anion.equals(pairList.get(0)) ? pairList.get(1) : pairList.get(0);
-
             if (cation.getName().contains("(")) {
                 System.out.print("\nEnter the special oxidation case for your chosen transition metal." +
-                        "\nThis must be in nomenclature format--Ex. Iron(III): ");
+                        "\nThis must be in nomenclature format (Ex. Iron(III)): ");
                 cation = findFromName(compoundList, s.nextLine());
             }
-
             int a = Math.abs(anion.getCharge()), c = cation.getCharge();
             if (Math.abs(a) == c) {
                 System.out.println("\n" + changeToSubscript(cation.getName() + " " +

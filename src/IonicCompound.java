@@ -2,7 +2,7 @@ public class IonicCompound {
     private final String ion;
     private final int charge;
     private final boolean polyatomic;
-    private String name;
+    private final String name;
 
     public IonicCompound(String n, int c, boolean isP, String io) {
         name = n;
@@ -17,10 +17,6 @@ public class IonicCompound {
 
     public int getCharge() {
         return charge;
-    }
-
-    public void setName(String n) {
-        name = n;
     }
 
     /**
